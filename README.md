@@ -8,6 +8,21 @@ This repository contains the engineering documentation and source code for a rob
 
 The system supports parameterized setup of parts, two‑zone operation, automated doors and vises control, and integration with the CNC controller via Modbus TCP and custom M‑codes.
 
+## Project status
+
+Current status: **In progress**.
+
+The cell is being engineered and commissioned on a real dual‑spindle CNC lathe. Documentation and source code will be updated as the project evolves.
+
+## Technology stack
+
+- Delta DVP12SE PLC (DVP12SE11R) programmed with Delta ISPSoft.
+- AUBO i10 collaborative robot programmed via AUBOPE (Lua scripts and teach pendant projects).
+- JS-D680S-2 CNC controller with custom M-codes (M200–M205) for PLC interaction.
+- Tesla SCADA system for parameter input, monitoring and alarms.
+- Communication: Modbus TCP between PLC, CNC and robot.
+- Pneumatic system for doors and vises, SCHUNK grippers and custom mechanical tooling.
+
 ## System architecture
 
 Main components:
